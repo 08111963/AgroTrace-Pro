@@ -4,8 +4,8 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from dist/public (where Vite builds to)
-app.use(express.static(path.join(__dirname, 'dist', 'public')));
+// Serve static files from client/dist
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 // API health check
 app.get('/api/health', (req, res) => {
@@ -14,7 +14,7 @@ app.get('/api/health', (req, res) => {
 
 // Catch all handler: send back React's index.html file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
