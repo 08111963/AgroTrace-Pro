@@ -9,6 +9,14 @@
     "npm": ">=8.0.0"
   },
   "scripts": {
+  "dev": "NODE_ENV=development tsx server/index.ts",
+  "build": "vite build",
+  "start": "node index.js",
+  "db:generate": "drizzle-kit generate",
+  "db:push": "drizzle-kit push",
+  "db:studio": "drizzle-kit studio",
+  "type-check": "tsc --noEmit"
+},
     "dev": "NODE_ENV=development tsx server/index.ts",
     "build": "vite build",
     "start": "NODE_ENV=production tsx server/index.ts",
@@ -20,7 +28,9 @@
     "lint": "eslint . --ext .ts,.tsx",
     "test": "echo \"Tests coming soon\" && exit 0"
   },
-  "keywords": [
+ "dependencies": {
+  "express": "^4.19.2"
+}, "keywords": [
     "agrotrace",
     "food-traceability",
     "agriculture",
