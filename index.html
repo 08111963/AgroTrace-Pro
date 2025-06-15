@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTrace Pro - Sistema di Tracciabilità Agroalimentare</title>
+    <meta name="description" content="AgroTrace Pro: piattaforma completa per la gestione della tracciabilità agroalimentare. Ricette, lotti, inventario, QR code e valori nutrizionali automatici.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container { 
+            text-align: center; 
+            max-width: 600px; 
+            padding: 40px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        h1 { 
+            font-size: 3rem; 
+            margin-bottom: 20px; 
+            font-weight: 700;
+        }
+        p { 
+            font-size: 1.2rem; 
+            margin-bottom: 30px; 
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .status {
+            background: rgba(34, 197, 94, 0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            margin: 20px 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .feature {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #86efac;
+        }
+        .info {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        .demo-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        .demo-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 AgroTrace Pro</h1>
+        <p>Sistema Completo di Tracciabilità Agroalimentare</p>
+        
+        <div class="status">
+            <strong>✅ Deploy Completato con Successo!</strong><br>
+            Hosted su GitHub Pages - Gratuito per sempre
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📋 Gestione Ricette</h3>
+                <p>Crea e gestisci ricette con ingredienti, allergeni e valori nutrizionali automatici</p>
+            </div>
+            <div class="feature">
+                <h3>📦 Tracciabilità Lotti</h3>
+                <p>Traccia completamente ogni lotto di produzione con QR code automatici</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Inventario Smart</h3>
+                <p>Gestione automatizzata delle scorte con allerte per scadenze e riordini</p>
+            </div>
+            <div class="feature">
+                <h3>📱 QR Code</h3>
+                <p>Generazione automatica di QR code per la tracciabilità completa</p>
+            </div>
+        </div>
+
+        <div style="margin: 30px 0;">
+            <button class="demo-btn" onclick="window.open('https://github.com/08111963/AgroTrace-Pro', '_blank')">
+                📂 Visualizza Codice Sorgente
+            </button>
+            <button class="demo-btn" onclick="alert('App demo - Per la versione completa contatta lo sviluppatore')">
+                🚀 Richiedi Accesso Completo
+            </button>
+        </div>
+
+        <div class="info">
+            <p><strong>Hosting:</strong> GitHub Pages - Completamente gratuito e affidabile</p>
+            <p>Questa è la pagina demo. Per accedere all'applicazione completa con database, contatta lo sviluppatore.</p>
+        </div>
+    </div>
+</body>
+</html>
